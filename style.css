@@ -257,21 +257,103 @@ section {
     color: #fff;
     padding: 1em;
 }
+
+#testimonials {
+    background-color: #807f7fb9;
+    display: flex;
+}
+
+.tester {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.tester h1 {
+    background-color: bisque;
+    text-align: center;
+}
+.tests {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.tests input {
+    display: none;
+}
+.test {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.test  {
+    width: 20%;
+    transition: 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation-manuals {
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    top: 70%;
+    left: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.manuals-btn {
+    border: 3px solid rgb(255, 255, 255);
+    padding: 6px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manuals-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manuals-btn:hover {
+    background-color: #b5b3b3;
+}
+
+#radios1:checked~.cool {
+    margin-left: 0%;
+}
+
+#radios2:checked~.cool {
+    margin-left: -20%;
+}
+
+#radios3:checked~.cool {
+    margin-left: -40%;
+}
+
+#radios4:checked~.cool {
+    margin-left: -60%;
+}
+
+/* /////// */
+
 .container-test {
     height: 50%;
-    width: 100%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    border-radius: 50px;
 }
 .testimonial {
     position: relative;
-    height: 400px;
-    max-width: 800px;
-    width: 100%;
-    background-color: yellowgreen;
+    min-height: 400px;
+    width: 80%;
+    background-color: rgb(159, 210, 57);
     padding: 50px 0px;
+    border-radius: 20px;
 }
 .testimonial img {
     height: 180px;
@@ -287,13 +369,16 @@ section {
     row-gap: 30px;
 }
 .slidem p {
-    /* text-align: center; */
+    text-align: center;
     padding: 0px 60px;
     width: 800px;
     position: relative;
 }
-.test-content {
-    text-align: center;
-    position: relative;
-
+.slidem .quote-icon {
+    font-size: 30px;
+}
+.slidem .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
