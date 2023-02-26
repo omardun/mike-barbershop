@@ -380,10 +380,6 @@ section {
     background-color: rgb(88, 88, 88);
     padding: 50px 0px;
     border-radius: 20px;
-    /* background-image: url("/images/brick.jpg");
-    background-position: center;
-    background-size: cover;
-    object-fit: fill ; */
 }
 
 .testimonial img {
@@ -445,11 +441,9 @@ section {
     background-color: rgb(255, 255, 255);
     float: left;
     transform: translate(0%, 18%);
-
 }
 
 .paragraph {
-    /* transform: translate(0%, 10%); */
     background-color: rgb(255, 255, 255);
     width: 60%;
     padding: 20px;
@@ -462,10 +456,6 @@ section {
     font-size: 20px;
 }
 
-#gallery {
-    background-color: rgb(234, 229, 229);
-}
-
 .title-shop {
     display: flex;
 }
@@ -474,107 +464,67 @@ section {
     display: flex;
 }
 
+ #gallery {
+    margin: 0;
+    padding: 0;
+} 
 .gallery-title {
     text-align: center;
     text-transform: capitalize;
-    margin: 3%;
+    /* margin: 3%; */
 }
-
 .image-gallery {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    /* padding: 30px; */
-    margin: 10px; 
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    padding: 3%;
+    margin: 0px 80px;
+    /* background-color: yellowgreen; */
 }
-
-.image-gallery>li {
-    flex-basis: 350px;
-    list-style-type: none;
-}
-
-.jpg1 {
+.image-gallery > img {
+    width: 90%;
+    height: 90%;
     object-fit: cover;
-    max-width: 100%;
-    height: 200px;
-    /* vertical-align: middle; */
-    border-radius: 5px;
-    display: block;
-
+}
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+.image-grid-col-2 {
+    grid-row: span 2;
 }
 
-/* .image-gallery::after {
-    content: "";
-    flex-basis: 350px;
-} */
-
-.image__over {
-    position: absolute;
-    top: 0;
-    left: 2;
-    width: 300px;
-    height: 200px;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
-}
-
-.image__over > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
-}
-.image__over:hover {
-    opacity: 1;
-}
-.image__over:hover > * {
-    transform: translateY(0px);
-}
-.image__title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
-}
-.image__description {
-    font-size: 1.25rem;
-    margin-top: 0.25rem;
-    color: #fff;
-}
 .gallery-btns {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .gallery-btns .view-more {
     color: #c60f0fb9;
     margin: 20px;
     width: 8%;
-}
-
+} 
 .gallery-btns .book {
     color: #c60f0fb9;
     margin: 20px;
     width: 8%;
 }
 
-#store-information {
+ #store-information {
     height: 5%;
     background-color: #303030;
     padding: 50px;
-}
+}  
 
 .store-title {
     text-align: center;
     color: #fff;
-    /* padding: 30px; */
 }
-
 .footer-container {
     display: inline-flex;
     justify-content: space-between;
@@ -619,4 +569,12 @@ section {
     justify-content: center;
     align-items: center;
     height: 50px;
+}
+
+
+@media screen and  (max-width: 1024px) {
+    .image-gallery {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
 }
