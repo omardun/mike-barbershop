@@ -226,7 +226,7 @@ section {
 }
 
 #services {
-    background-color: #000000;
+    background-color: #dad8d8;
     padding: 0;
     margin: 0;
 }
@@ -234,7 +234,9 @@ section {
 .services-heading {
     text-align: center;
     margin: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    
 }
 
 .container-services {
@@ -488,7 +490,7 @@ section {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    padding: 20px;
+    /* padding: 20px; */
 
 
 }
@@ -577,7 +579,23 @@ section {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: yellowgreen;
+    color: rgb(0, 128, 255);
+}
+.text button {
+    width: 120px;
+    height: 35px;
+    background-color: #e90000;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+  text-transform: uppercase;
+}
+.text button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
 }
 .gallery-btns {
     display: flex;
