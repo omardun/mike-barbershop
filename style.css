@@ -18,16 +18,18 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 15px 50px;
     background-color: rgba(0, 0, 0, 0.905);
     align-items: center;
     position: fixed;
     z-index: 99;
+    height: 15%;
 }
 
 header img {
     width: 100px;
     height: 100px;
+    position: relative;
 }
 
 #menu li {
@@ -192,8 +194,8 @@ section {
         -1px -1px 0 rgb(0, 0, 0);
     font-weight: 700;
     text-transform: capitalize;
-
 }
+
 
 .text-heading h1 {
     color: rgb(24, 112, 189);
@@ -226,7 +228,7 @@ section {
 }
 
 #services {
-    background-color: #dad8d8;
+    background-color:#485665;
     padding: 0;
     margin: 0;
 }
@@ -234,51 +236,96 @@ section {
 .services-heading {
     text-align: center;
     margin: 30px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     
+}
+.fa-book {
+    color: #e1451e;
 }
 
 .container-services {
     display: flex;
-    /* align-items: top; */
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    padding: 4%;
-    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 15px;
 }
 
 .container-services .image {
-    margin-right: 5%;
+    max-width: 80%;
+    margin-right: 20px;
 }
 
-.prices {
-    font-size: 20px;
-    /* padding-left: 5%; */
-    float: left;
-    background-color: rgb(147, 140, 147);
-    height: 500px;
-    width: 60%;
-    color: rgb(255, 255, 255);
-    position: relative;
-    top: 5%;
-}
-
-.prices p {
-    text-align: center;
-}
-
-.wrapper {
-    display: grid;
-    grid-template-columns: 700px 2fr;
+table {
+    border-collapse: collapse;
     width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    background: rgb(132, 132, 132);
+    color: #fff;
+    height: 400px;
 }
 
-.box {
-    background-color: rgb(0, 0, 0);
+tr th{
+    background: rgb(176, 9, 9);
+    color: rgb(255, 255, 255);
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+td {
+    color: #000000;
+
+}
+td:hover {
+    background: rgb(9, 9, 9);
     color: #fff;
-    padding: 1em;
+}
+
+tr:hover {
+    background: rgb(179, 179, 179);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .container img {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    table, tr, td {
+        display: block;
+        position: relative;
+    }
+    
+    td {
+        border: none;
+        position: relative;
+    }
+    
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label);
+        font-weight: bold;
+    }
+
 }
 
 #testimonials {
@@ -491,8 +538,17 @@ section {
     text-transform: uppercase;
     color: #ffffff;
     /* padding: 20px; */
-
-
+}
+.king {
+    display: inline-block;
+}
+.gallery-title i {
+    color: #e9c200;
+    transition: color 0.3s ease-in-out;
+    font-size: 40px;
+}
+.gallery-title:hover i {
+    color: #e90000;
 }
 .image-gallery {
     position: relative;
@@ -717,7 +773,30 @@ section {
     align-items: center;
     height: 50px;
 }
+.insta-icon{
+    display: inline-block;
+  }
+  
+  .insta-icon i {
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out;
+    font-size: 40px;
+  }
+  .insta-icon:hover i {
+    color: rgba(246, 243, 243, 0.59);
+  }
+  .yelp-icon {
+      display: inline-block;
+  }
+  .yelp-icon i {
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out;
+    font-size: 40px;
+  }
+  .yelp-icon:hover i {
+    color: rgba(246, 243, 243, 0.59);
 
+  }
 
 @media screen and  (max-width: 1024px) {
     .image-gallery {
