@@ -92,8 +92,66 @@ header img {
   /* text-align: center; */
   display: inline-block;
 }
+
 .cat-links {
-  text-align: center;
+  display: flex;
+  justify-content: center;  
+}
+.cat-links p {
+  margin-right: 4px;
+}
+.cat-links p:last-child {
+  margin-right: 0;
+}
+.cat-links a {
+  text-decoration: none;
+  color: black;
+}
+.cat-links a:hover {
+  color: #000;
+}
+.link1 {
+  padding-right: 20px;
+
+
+}
+.link2 {
+  padding-right: 20px;
+
+}
+.link3{
+  padding-right: 20px;
+
+}
+.link4{
+  padding-right: 20px;
+
+}
+.link5{
+  padding-right: 20px;
+
+}
+.link6{
+  padding-right: 20px;
+
+}
+.link1:hover {
+  color: #ff0000;
+}
+.link2:hover {
+  color: #ff0000;
+}
+.link3:hover {
+  color: #ff0000;
+}
+.link4:hover {
+  color: #ff0000;
+}
+.link5:hover {
+  color: #ff0000;
+}
+.link6:hover {
+  color: #ff0000;
 }
   #store-information {
     height: 5%;
