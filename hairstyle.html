@@ -15,15 +15,17 @@
 
 <body>
     <section id="home">
-        <header>
-            <a href="index.html"><img src="/images/main.jpg" alt="logo"></a>
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkBtn"><i class="fas fa-bars"></i></label>
+            <label class="logo">Design</label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#store-information">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </header>
+        </nav>
         <div class="category-para">
             <h1>Mens Hairstyles</h1>
             <hr class="horizontal-line">
@@ -82,50 +84,44 @@
             </div>
             <div class="footer-container">
                 <div class="store-info">
-                    <ul>
-                        <p>Studio Information</p>
-                        <li>
-                            <a class="address_studio" href='https://maps.apple.com/maps?q=3144-1 Tampa Rd, Oldsmar, FL 34677'>3144-1 Tampa Rd</a>
-                        </li>
-                        <li>
-                            <a href="tel:123-456-7890">123-456-7890</a>
-                        </li>
-                        <li>
-                            <a href="mailto: abc@example.com">myemail@gmail.com</a>
-                        </li>
-                    </ul>
+                    <h3>Studio Information</h3>
+                    <p><a  href='https://maps.apple.com/maps?q=3144-1 Tampa Rd, Oldsmar, FL 34677'>3144-1 Tampa Rd</a></p>
+                    <p><a href="tel:123-456-7890">123-456-7890</a></p>
+                    <p><a href="mailto: abc@example.com">myemail@gmail.com</a></p>
                 </div>
-                <div class="store-hours">
-                    <ul>
-                        <p>Studio Hours</p>
-                        <li>
-                            <p>Monday – Friday | 8am–8pm</p>
-                        </li>
-                        <li>
-                            <p>Saturday | 8am – 5pm</p>
-                        </li>
-                        <li>
-                            <p>Sunday | 8am – 5pm</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="store-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d450411.146777339!2d-82.98056053779095!3d28.12099477632884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2edaebd75d841%3A0xbe5fca49dc613f92!2sSalon%20Lofts%20Oldsmar%20Woodlands%20Square!5e0!3m2!1sen!2sus!4v1676764609272!5m2!1sen!2sus"
-                        width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="payment">
+                    <img class="money" src="/icons/amex.svg" alt="">
+                    <img class="zelle" src="/icons/zelle.svg" alt="">
+                    <img class="money" src="/icons/visa.svg" alt="">
+                    <img class="money" src="/icons/mastercard.svg" alt="">
+                    <img class="money" src="/icons/discover.svg" alt="">
+                    <i class="fa-brands fa-cc-apple-pay"></i>
                 </div>
     
+                <div class="store-hours">
+                    <h3>Studio Hours</h3>
+    
+                    <p>Monday – Friday | 8am–8pm</p>
+    
+                    <p>Saturday | 8am – 5pm</p>
+    
+                    <p>Sunday | 8am – 5pm</p>
+                </div>
+                <div class="store-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.142619966839!2d-82.69996538486568!3d28.050669616926907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2edaebd75d841%3A0xbe5fca49dc613f92!2sSalon%20Lofts%20Oldsmar%20Woodlands%20Square!5e0!3m2!1sen!2sus!4v1678063837597!5m2!1sen!2sus" width="1000" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                   
         </section>
-        <div class="bottom-footer">
+        <!-- <div class="bottom-footer">
             <p class="copyrights">&copy; 2023 Your Company Name. All Rights Reserved.</p>
             <div class="icon-footer">
                 <img src="/icons/icons8-instagram-30.png" width="30" height="30"></img>
                 <img src="/icons/icons8-square-50.png" width="30" height="30" margin-left="20px"></img>
     
             </div>
-        </div>
+        </div> -->
     
     </body>
     
     </html>
+    
