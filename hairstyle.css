@@ -16,101 +16,132 @@ html {
 }
 
 nav {
-  background: #003559;
-  height: 100px;
-  width: 100%;
-
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(22, 22, 22);
+  padding: 1rem 1.5rem;
 }
-
-.label.logo {
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
+nav h1 {
+  color: #ddd;
+  letter-spacing: 5px;
+  padding: 0.5rem 1rem;
+  padding-right: calc(1rem - 5px);
+  border: 3px solid white;
+  transition: 0.3s;
+  border-radius: 6px;
 }
-
-ul {
-  height: 0px;
+nav h1:hover {
+  color: #e1451e;
 }
-
-nav ul {
-  float: right;
-  margin-right: 20px;
+.menu {
+  display: none;
+  align-items: center;
+  margin: 0 -1rem;
 }
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0px 5px;
-}
-
-nav ul li a {
-  color: rgb(0, 0, 0);
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
+.menu a {
+  margin: 0 1rem;
+  color: #fff;
   text-decoration: none;
+  transition: 0.3s;
 }
-
-nav ul li a::after {
-  content: "";
-  width: 0;
-  background-color: #ffffff;
-  margin: 0px;
-  display: block;
-
-  height: 5px;
+.menu a:hover {
+  color: #ccddcc;
 }
-
-nav ul li a:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-  height: 3px;
-  padding: 0;
-  margin: 0;
-
-}
-.checkBtn {
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
+.hamburger {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
   cursor: pointer;
-  display: none;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+.hamburger span {
+  color: #ccddcc;
+  font-size: 2rem;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  padding-top: 6rem;
+  opacity: 0;
+  transform: translateY(-100%);
+  background: rgb(5, 105, 188);
+  color: #fff;
+  transition: 0.3s;
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-#check {
-  display: none;
+.mobile-menu a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.3s;
 }
+.mobile-menu a:hover {
+  color: #e1451e;
+  background: rgb(255, 255, 255);
+}
+
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 85%;
-    margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 10px;
+  margin: 0 auto;
   }
   
   .gallery-item {
-    width: calc(25% - 10px);
-    margin: 5px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    /* margin: 5px; */
     overflow: hidden;
+    background-color: #94909000;
+    margin: 0 1%;
     cursor: pointer;
+    margin-right: 0;
+
   }
   
   .gallery-item img {
-    width: 85%;
+    width: 90%;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
   }
-  
-  .gallery-item:hover img {
-    transform: scale(1.1);
+  @media (min-width: 768px) {
+    .mobile-menu, .hamburger {
+        display: none;
+    }
+    .menu  {
+        display: flex;
+    }
+    .navbar-mobile {
+        display: block;
+    }
+    
   }
+  /* .gallery-item:hover img {
+    transform: scale(1.4);
+  } */
   .category-para {
     text-align: center;
     color: rgb(0, 0, 0);
@@ -446,6 +477,41 @@ nav ul li a:hover::after {
     height: 200px;
     padding-top: 20px;
   }
+  .horizontal-line {
+    border: none;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px 10px;
+    width: 250px;
+    display: inline-block;
+  }
+  .gallery {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 13px;
+    margin: 0 auto;
+}
+
+.gallery-item  {
+    position: relative;
+    width: 185px;
+    height: 185px;
+    overflow: hidden;
+    background-color: #00000000;
+    margin: 0 1%;
+    cursor: pointer;
+}
+.gallery-item img {
+  width: 90%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+
+}
+
 }
 
 

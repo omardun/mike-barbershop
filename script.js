@@ -1,8 +1,22 @@
 let counter = 1;
-setInterval(function() {
+setInterval(function () {
     document.getElementById('radio' + counter).checked = true;
     counter++
-    if(counter > 4) {
+    if (counter > 4) {
         counter = 1;
     }
 }, 5000)
+
+const hamburger = document.querySelector('.hamburger');
+const hamburger_icon = document.querySelector('span');
+const mobile_menu = document.querySelector('.mobile-menu');
+
+hamburger.addEventListener('click', () => {
+    hamburger_icon.innerText = hamburger_icon.innerText === 'menu' ? 'close' : 'menu';
+
+    mobile_menu.classList.toggle('is-open');
+})
+mobile_menu.addEventListener('click', () => {
+    mobile_menu.classList.remove('is-open')
+    hamburger_icon.innerText = hamburger_icon.innerText === 'close' ? 'menu' : 'close' 
+})
