@@ -74,7 +74,7 @@ nav h1:hover {
   padding-top: 6rem;
   opacity: 0;
   transform: translateY(-100%);
-  background: rgb(5, 105, 188);
+  background: rgb(0, 0, 0);
   color: #fff;
   transition: 0.3s;
 }
@@ -93,10 +93,9 @@ nav h1:hover {
   transition: 0.3s;
 }
 .mobile-menu a:hover {
-  color: #e1451e;
+  color: rgb(24, 112, 189);
   background: rgb(255, 255, 255);
 }
-
 .gallery {
   position: relative;
   display: flex;
@@ -172,26 +171,26 @@ nav h1:hover {
   color: #000;
 }
 .link1 {
-  padding-right: 20px;
+  padding-right: 9px;
 }
 .link2 {
-  padding-right: 20px;
+  padding-right: 9px;
 
 }
 .link3{
-  padding-right: 20px;
+  padding-right: 9px;
 
 }
 .link4{
-  padding-right: 20px;
+  padding-right: 9px;
 
 }
 .link5{
-  padding-right: 20px;
+  padding-right: 9px;
 
 }
 .link6{
-  padding-right: 20px;
+  padding-right: 9px;
 
 }
 .link1:hover {
@@ -295,13 +294,13 @@ nav h1:hover {
   width: 100%;
   height: 50px;
   display: table;
-  background: #ccddcc;
+  background: #000000e0;
 }
 
 .copyrights {
   text-align: center;
-  vertical-align: middle;
-  display: table-cell;
+  color: #fff;
+  margin-top: 10px;
 }
 
 .icon-footer {
@@ -309,6 +308,21 @@ nav h1:hover {
   justify-content: center;
   align-items: center;
   height: 50px;
+}
+.social-media {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+
+}
+.social-media i {
+  font-size: 34px;
+  margin: 0 5px;
+  color: rgba(91, 91, 91, 0.827);
+}
+i:hover  {
+  color: rgba(246, 243, 243, 0.704);
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -539,6 +553,14 @@ nav h1:hover {
     height: 200px;
     padding-top: 20px;
   }
+  .payment {
+    position: relative;
+    /* top: 94%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+  }
 
 }
 
@@ -562,9 +584,9 @@ nav h1:hover {
   }
 
   .store-map {
-    width: 250px;
+    max-width: 200px;
     height: 200px;
-    padding-top: 20px;
+    padding: 20px;
   }
 
   .payment {
@@ -573,14 +595,9 @@ nav h1:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 350px;
+    width: 280px;
   }
 }
-
-@media (max-width: 412px) {
-
-}
-
 @media (max-width: 280px) {
   .footer-container {
     flex-direction: column;

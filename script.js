@@ -10,13 +10,17 @@ setInterval(function () {
 const hamburger = document.querySelector('.hamburger');
 const hamburger_icon = document.querySelector('span');
 const mobile_menu = document.querySelector('.mobile-menu');
+const body = document.querySelector('body')
 
 hamburger.addEventListener('click', () => {
     hamburger_icon.innerText = hamburger_icon.innerText === 'menu' ? 'close' : 'menu';
-
     mobile_menu.classList.toggle('is-open');
+    // body.style.overflow= 'hidden'
+
 })
 mobile_menu.addEventListener('click', () => {
     mobile_menu.classList.remove('is-open')
     hamburger_icon.innerText = hamburger_icon.innerText === 'close' ? 'menu' : 'close' 
+        // body.style.overflow= ''
+
 })
