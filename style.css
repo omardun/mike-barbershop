@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@1&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -122,6 +124,7 @@ section {
     width: 500%;
     height: 100%;
     display: flex;
+
 }
 
 .slides input {
@@ -629,6 +632,7 @@ i:hover  {
 .store-title {
     text-align: center;
     color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .Book-Footer {
@@ -642,6 +646,7 @@ i:hover  {
     text-transform: uppercase;
     margin-left: 20px;
     padding: 5px;
+    font-family: 'Arapey', serif;
 }
 
 .Book-Footer:hover {
@@ -993,8 +998,6 @@ i:hover  {
         display: block;
       }
 }
-  
-
 @media (max-width: 760px) {
     .navigation-auto {
         display: none;
