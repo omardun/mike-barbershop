@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -43,6 +44,23 @@ nav h1 {
 }
 nav h1:hover {
     color: #e1451e;
+}
+.nav-book {
+    width: 100%;
+    background-color: #e90000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: 'Arapey', serif;
+    text-align: center;
+    margin: auto;
+}
+.nav-book:hover {
+    background: #000;
 }
 .menu {
     display: none;
@@ -102,7 +120,7 @@ nav h1:hover {
     transition: 0.3s;
 }
 .mobile-menu a:hover {
-    color: rgb(24, 112, 189);
+    color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);
 }
 
@@ -250,14 +268,13 @@ section {
 
 
 .text-heading h1 {
-    color: rgb(24, 112, 189);
-
+    color: rgb(165, 159, 159);
     padding: 1rem 1.5rem;
     font-size: 5.3rem;
-    text-shadow: -1px 1px 0 rgb(255, 255, 255),
-        1px 1px 0 rgb(255, 255, 255),
-        1px -1px 0 rgb(255, 255, 255),
-        -1px -1px 0 rgb(255, 255, 255);
+    text-shadow: -1px 1px 0 rgb(0, 0, 0),
+        1px 1px 0 rgb(0, 0, 0),
+        1px -1px 0 rgb(0, 0, 0),
+        -1px -1px 0 rgb(0, 0, 0);
     font-weight: bold;
 }
 
@@ -282,33 +299,42 @@ section {
 
 
 #services {
-    background-color: #000000;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    background-color: rgb(28, 28, 28);
     height: auto;
+}
+.service-page {
+    background-color: #000000;
+    margin: auto;
+    padding: 20px 0px;
 }
 
 .services-heading {
     text-align: center;
-    margin: 30px;
+    /* margin: 30px; */
     color: rgb(255, 255, 255);
-    text-transform: uppercase;
-
+    text-transform: capitalize;
+    font-family: 'Domine', serif;
 }
 
-.fa-book {
+/* .fa-book {
     color: #e1451e;
+} */
+.type-service {
+    font-family: 'Domine', serif;
 }
 
 .container-services {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 15px;
+    padding: 20px;
     background: #000;
     position: relative;
+    height: auto;
 }
 
 .container-services img {
@@ -346,16 +372,6 @@ td {
 background: #000;
 
 }
-
-/* td:hover {
-    background: rgb(9, 9, 9);
-    color: #fff;
-}
-
-tr:hover {
-    background: rgb(179, 179, 179);
-} */
-
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
@@ -384,8 +400,10 @@ tr:nth-child(even) {
 
 .gallery-title {
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #ffffff;
+    padding: 30px;
+    font-family: 'Domine', serif;
 }
 
 .king {
@@ -601,6 +619,7 @@ tr:nth-child(even) {
     font-size: 40px;
     color: #fff;
     margin-bottom: 20px;
+    font-family: 'Domine', serif;
 }
 .about-text p {
     font-size: 30px;
@@ -616,10 +635,10 @@ tr:nth-child(even) {
 .social-media i {
     font-size: 34px;
     margin: 0 5px;
-    color: rgba(91, 91, 91, 0.827);
+    color: rgba(246, 243, 243, 0.704);
 }
 i:hover  {
-    color: rgba(246, 243, 243, 0.704);
+    color: rgba(91, 91, 91, 0.827);
     cursor: pointer;
 }
 
@@ -634,7 +653,6 @@ i:hover  {
     color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 .Book-Footer {
     width: 130px;
     background-color: #e90000;
@@ -690,6 +708,7 @@ i:hover  {
     justify-content: space-around;
     align-items: center;
     width: 500px;
+    flex-wrap: wrap;
 }
 
 .payment i {
@@ -778,7 +797,8 @@ i:hover  {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 400px;
+        width: auto;
+        flex-wrap: wrap;
 
     }
 
@@ -1040,7 +1060,7 @@ i:hover  {
 
     .image-gallery .card {
         position: relative;
-        width: 190px;
+        width: 180px;
         height: 190px;
         overflow: hidden;
         background-color: #00000000;
@@ -1179,14 +1199,14 @@ i:hover  {
         padding-top: 20px;
     }
 
-    .payment {
+    /* .payment {
         position: absolute;
         top: 94%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 350px;
-    }
+    } */
     .container-services img {
         width: 300px;
         height: 280px;
