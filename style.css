@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Noto+Serif+Malayalam&display=swap');
 
 * {
     margin: 0;
@@ -61,7 +63,9 @@ nav h1:hover {
     transition: background-color 0.5s ease-in-out;
     text-transform: uppercase;
     padding: 10px;
-    font-family: 'Arapey', serif;
+    /* font-family: 'Alkatra', cursive; */
+    font-family: 'Alkatra', cursive;
+    font-family: 'Noto Serif Malayalam', serif;
     text-align: center;
     margin: auto;
 }
@@ -291,7 +295,7 @@ section {
         1px -1px 0 rgb(255, 255, 255),
         -1px -1px 0 rgb(255, 255, 255);
     font-family: 'Noto Serif Malayalam', serif;
-    
+
 }
 
 .mainpageBtns {
@@ -359,7 +363,7 @@ section {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background: rgb(86, 86, 86);
+    background: rgb(0, 0, 0);
     position: relative;
     height: auto;
 }
@@ -426,6 +430,7 @@ tr:nth-child(even) {
     height: auto;
     width: 100%;
 }
+
 .image-gallery {
     position: relative;
     display: flex;
@@ -437,6 +442,7 @@ tr:nth-child(even) {
     gap: 13px;
     margin: 0 auto;
 }
+
 .gallery-title {
     text-align: center;
     text-transform: capitalize;
@@ -703,13 +709,14 @@ i:hover {
     background-color: #e90000;
     color: rgb(255, 255, 255);
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
     transition: background-color 0.5s ease-in-out;
-    text-transform: uppercase;
     margin-left: 20px;
     padding: 5px;
-    font-family: 'Arapey', serif;
+    /* font-family: 'Arapey', serif; */
+    font-family: 'Alkatra', cursive;
+font-family: 'Noto Serif Malayalam', serif;
 }
 
 .Book-Footer:hover {
@@ -1104,22 +1111,24 @@ i:hover {
         width: 100%;
         padding: 0 10px;
         margin: 0 auto;
-        
+
     }
 
     .text-heading h1 {
         font-size: 4rem;
-        margin:0 auto;
+        margin: 0 auto;
     }
 
     .text-heading p {
         font-size: 1.8rem;
     }
+
     .mainpageBtns {
         width: 100%;
         /* flex-direction: column; */
         margin: 10px auto;
     }
+
     .mainpageBtns button {
         margin-bottom: 10px;
     }
@@ -1295,9 +1304,11 @@ i:hover {
         align-items: center;
         /* width: 100%; */
     }
+
     .about-content {
         width: auto;
     }
+
     .about-image {
         margin: 20px auto;
         left: 0;
@@ -1305,13 +1316,16 @@ i:hover {
         height: 250px;
         /* border-radius: 10%; */
     }
+
     .about-image img {
         width: 100%;
         height: 100%;
-    } 
-    .about-text h3{
+    }
+
+    .about-text h3 {
         font-size: 2rem;
     }
+
     .about-content p {
         font-size: 1.4rem;
     }
@@ -1334,17 +1348,20 @@ i:hover {
         margin: auto;
         padding: auto;
     }
+
     #gallery {
         /* height: auto; */
         min-width: auto;
     }
+
     .image-gallery {
-        width: 100%;     
-        background: rgb(142, 23, 23);   
+        width: 100%;
     }
+
     .about-content {
         width: auto;
     }
+
     .about-image {
         margin: 20px auto;
         left: 0;
@@ -1352,21 +1369,34 @@ i:hover {
         height: 250px;
         /* border-radius: 10%; */
     }
+
     .about-image img {
         width: 100%;
         height: 100%;
     }
-    .about-text h3{
+
+    .about-text h3 {
         font-size: 2rem;
     }
+
     .about-text p {
-        font-size: 1rem;
-        color: #ff0000;
+        font-size: 1.3rem;
+        color: #767373;
     }
+
     table {
         width: auto;
         height: auto;
     }
+
+    .store-title button {
+        margin: 15px 0px;
+    }
+
+    .copyrights {
+        padding: 0px 20px;
+    }
+
     /* .about-image img {
         width: 100%;
         height: 80%;
@@ -1397,6 +1427,7 @@ i:hover {
         text-transform: uppercase;
     } */
 }
+
 /* body {
         width: 300%;
         height: auto;
@@ -1404,41 +1435,49 @@ i:hover {
 @media (max-width: 320px) {
     .wonder {
         width: auto;
-        background: rgb(220, 19, 19);
+        background: rgb(7, 186, 235);
     }
+
     .menu {
         width: 300%;
         background: #000;
     }
+
     .mobile-menu {
         width: 100%;
     }
 
     .about-content {
-        width:auto;
+        width: auto;
     }
+
     .about-image {
         left: 3%;
         width: 250px;
         height: 250px;
     }
+
     body {
         width: 100%;
         height: 100%;
-    } 
+    }
 }
+
 @media (max-width: 300px) {
     html {
         min-width: 140%;
     }
+
     .about-image {
         left: 0;
     }
 }
+
 @media (max-width: 180px) {
     html {
         min-width: 200%;
     }
+
     .about-image {
         left: 0;
     }
