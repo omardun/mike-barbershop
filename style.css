@@ -589,8 +589,6 @@ tr:nth-child(even) {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
 }
-
-
 .text button {
     width: 120px;
     height: 35px;
@@ -602,20 +600,17 @@ tr:nth-child(even) {
     transition: background-color 0.5s ease-in-out;
     text-transform: uppercase;
 }
-
 .text button:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-transform: uppercase;
 }
-
 .gallery-btns {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
 }
-
 .view-more {
     margin: 20px;
     width: 120px;
@@ -628,13 +623,11 @@ tr:nth-child(even) {
     transition: background-color 0.5s ease-in-out;
     text-transform: uppercase;
 }
-
 .view-more:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-transform: uppercase;
 }
-
 .book {
     margin: 20px;
     width: 120px;
@@ -647,20 +640,17 @@ tr:nth-child(even) {
     transition: background-color 0.5s ease-in-out;
     text-transform: uppercase;
 }
-
 .book:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(3, 3, 3);
     text-transform: uppercase;
 }
-
 #about {
     background: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     height: auto;
 }
-
 /* .about-container {
     max-width: 1140px;
     margin: 0 auto;
@@ -740,7 +730,7 @@ i:hover {
 
 #store-information {
     background-color: #303030;
-    padding: 50px;
+    padding: 24px;
     height: auto;
 }
 
@@ -1390,8 +1380,7 @@ i:hover {
         width: 100%;
     } */
     .payment img {
-        margin-right: 20px;
-        padding: 3px;
+        margin: 10px 20px ;
     }
 }
 

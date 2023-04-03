@@ -24,8 +24,10 @@ mobile_menu.addEventListener('click', () => {
         body.style.overflow= ''
 
 })
-const image = document.querySelector('.card');
+const image = document.querySelectorAll('.card');
 
-image.addEventListener('click', function() {
+image.forEach(function(card) {
+   card.addEventListener('click', function() {
     image.classList.toggle("content-box")
+}) 
 })
