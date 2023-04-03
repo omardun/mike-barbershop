@@ -170,7 +170,7 @@ nav h1:hover {
 }
 
 .service-info {
-  text-align: left;
+  /* text-align:  center; */
   padding: 0px 65px;
   margin: 20px;
 }
@@ -353,6 +353,23 @@ font-family: 'Arapey', serif;
   /* display: table-cell; */
   color: #fff;
   margin-top: 10px;
+}
+.social-media {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+
+}
+
+.social-media i {
+  font-size: 34px;
+  margin: 0 5px;
+  color: rgba(246, 243, 243, 0.704);
+}
+
+i:hover {
+  color: rgba(91, 91, 91, 0.827);
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .gallery {
@@ -563,6 +580,11 @@ font-family: 'Arapey', serif;
 }
 .payment img {
   margin: 10px 20px ;
+}
+.service-info {
+  /* text-align:  center; */
+  padding: 0px 35px;
+  margin: 20px;
 }
 
   /* .payment {
