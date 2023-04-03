@@ -141,21 +141,6 @@ nav h1:hover {
   height: 235px;
 }
 
-@media (min-width: 768px) {
-
-  .mobile-menu,
-  .hamburger {
-    display: none;
-  }
-
-  .menu {
-    display: flex;
-  }
-
-  .navbar-mobile {
-    display: block;
-  }
-}
 .book-now {
   text-decoration: none;
 }
@@ -235,7 +220,7 @@ nav h1:hover {
 }
 
 .cat-links p {
-  padding-right: 38px;
+  padding-right: 25px;
 }
 
 .cat-links p:hover {
@@ -254,7 +239,7 @@ nav h1:hover {
 #store-information {
   height: 5%;
   background-color: #303030;
-  padding: 50px;
+  padding: 24px;
 }
 
 .store-title {
@@ -286,32 +271,30 @@ font-family: 'Arapey', serif;
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+
 }
 
 .store-info {
   color: #fff;
   flex: 1 0 25%;
-  text-align: left;
+  text-align: center;
+  margin: 5px 0px 20px 0px;
 }
 
-.store-info h3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.store-info a {
+  text-decoration: none;
 }
 
 .store-hours {
   color: #fff;
   flex: 1 0 25%;
-  text-align: right;
-}
-
-.store-hours h3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 .store-map {
@@ -320,13 +303,25 @@ font-family: 'Arapey', serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  /* padding-bottom: 20%; */
+
+}
+
+.store-map iframe {
+  /* position: absolute; */
+  width: 100%;
+  /* height: 250px; */
 }
 
 .payment {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  width: 500px;
+  width: 100%;
+  flex-wrap: wrap;
+  /* top: 20%; */
+  margin-top: 50px;
 }
 
 .payment i {
@@ -354,36 +349,12 @@ font-family: 'Arapey', serif;
 
 .copyrights {
   text-align: center;
+  /* vertical-align: middle; */
+  /* display: table-cell; */
   color: #fff;
   margin-top: 10px;
 }
-
-.icon-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-}
-
-.social-media {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0px;
-
-}
-
-.social-media i {
-  font-size: 34px;
-  margin: 0 5px;
-  color: rgba(91, 91, 91, 0.827);
-}
-
-i:hover {
-  color: rgba(246, 243, 243, 0.704);
-  cursor: pointer;
-}
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
@@ -392,43 +363,26 @@ i:hover {
 
 
 @media screen and (max-width: 1200px) {
-  .image-gallery {
+  /* .image-gallery {
     --num-cols: 2;
     --row-height: 200px;
-  }
-
+  } */
+/* 
   .footer-container {
     flex-direction: column;
     padding: 10px;
     height: auto;
   }
+ */
 
-  .store-hours {
-    text-align: center;
-    padding-right: 0;
-  }
-
-  .store-info {
-    text-align: center;
-    padding-right: 0;
-
-  }
-
-  .store-map {
-    width: 800px;
-    height: 200px;
-    padding-top: 20px;
-  }
-
-  .payment {
+  /* .payment {
     position: relative;
-    /* bottom: 54%; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 400px;
-  }
-
+  } */
+/* 
   .payment i {
     font-size: 33px;
     color: #ffffff;
@@ -443,50 +397,31 @@ i:hover {
   .zelle {
     width: 50px;
     height: 30px;
-  }
+  } */
 
 }
 
 @media (max-width: 1000px) {
-  .fade-page {
+  /* .fade-page {
     margin: 0 0%;
-    /* padding: auto; */
-    /* background: #000; */
-  }
 
-  label.logo {
+  } */
+
+  /* label.logo {
     font-size: 30px;
     padding-left: 50px;
   }
 
   nav ul li a {
     font-size: 16px;
-  }
-
+  } */
+/* 
   .footer-container {
     flex-direction: column;
     padding: 10px;
     height: auto;
-  }
+  } */
 
-  .store-hours {
-    padding-right: 0;
-    text-align: center;
-
-  }
-
-  .store-info {
-    padding-right: 0;
-    text-align: center;
-
-
-  }
-
-  .store-map {
-    width: 700px;
-    height: 200px;
-    padding-top: 20px;
-  }
 
   .gallery {
     position: relative;
@@ -499,7 +434,7 @@ i:hover {
     margin: 0 auto;
   }
 
-  .gallery-item {
+  /* .gallery-item {
     position: relative;
     width: 145px;
     height: 145px;
@@ -507,7 +442,7 @@ i:hover {
     background-color: #00000000;
     margin: 0 1%;
     cursor: pointer;
-  }
+  } */
 
   .gallery-item img {
     width: 90%;
@@ -518,9 +453,23 @@ i:hover {
   }
 
 }
+@media (min-width: 768px) {
+  .mobile-menu,
+  .hamburger {
+      display: none;
+  }
 
-@media (max-width: 760px) {
-  .checkBtn {
+  .menu {
+      display: flex;
+  }
+
+  .navbar-mobile {
+      display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .checkBtn {
     display: block;
   }
 
@@ -560,32 +509,13 @@ i:hover {
 
   #check:checked~ul {
     left: 0;
-  }
+  } */
 
-  .footer-container {
+  /* .footer-container {
     flex-direction: column;
     padding: 10px;
     height: auto;
-  }
-
-  .store-hours {
-    padding-right: 0;
-    text-align: center;
-
-  }
-
-  .store-info {
-    padding-right: 0;
-    text-align: center;
-
-  }
-
-  .store-map {
-    width: 480px;
-    height: 200px;
-    padding-top: 20px;
-  }
-
+  } */
   /* .gallery {
     position: relative;
     display: flex;
@@ -618,33 +548,25 @@ i:hover {
 
 
 @media (max-width: 550px) {
-  .footer-container {
+  #store-information {
+    display: flex;
     flex-direction: column;
-    padding: 10px;
-    height: auto;
-  }
+    align-items: center;
+    padding: auto;
+}
 
-  .store-hours {
-    padding-right: 0;
-    text-align: center;
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+}
+.payment img {
+  margin: 10px 20px ;
+}
 
-  }
-
-  .store-info {
-    padding-right: 0;
-    text-align: center;
-
-  }
-
-  .store-map {
-    width: 300px;
-    height: 200px;
-    padding-top: 20px;
-  }
-
-  .payment {
+  /* .payment {
     position: relative;
-    /* top: 94%; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -652,68 +574,66 @@ i:hover {
   }
   .cat-links p {
     padding-right: 20px;
-  }
+  } */
 }
 
-@media (max-width: 415px) {
-  .footer-container {
+@media (max-width: 414px) {
+  /* .footer-container {
     flex-direction: column;
     padding: 10px;
     height: auto;
+  } */
+
+
+}
+@media (max-width: 320px) {
+  .wonder {
+      width: auto;
+      background: rgb(7, 186, 235);
   }
 
-  .store-hours {
-    padding-right: 0;
-    text-align: center;
-
+  .menu {
+      width: 300%;
+      background: #000;
   }
 
-  .store-info {
-    padding-right: 0;
-    text-align: center;
-
+  .mobile-menu {
+      width: 100%;
   }
 
-  .store-map {
-    max-width: 200px;
-    height: 200px;
-    padding: 20px;
+  .about-content {
+      width: auto;
   }
 
-  .payment {
-    position: relative;
-    /* top: 94%; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 280px;
+  .about-image {
+      left: 3%;
+      width: 250px;
+      height: 250px;
+  }
+
+  body {
+      width: 100%;
+      height: 100%;
   }
 }
 
-@media (max-width: 280px) {
-  .footer-container {
-    flex-direction: column;
-    padding: 10px;
-    height: auto;
+@media (max-width: 300px) {
+  html {
+      min-width: 140%;
   }
 
-  .store-hours {
-    padding-right: 0;
-    text-align: center;
+  .about-image {
+      left: 0;
+  }
+}
 
+@media (max-width: 180px) {
+  html {
+      min-width: 200%;
   }
 
-  .store-info {
-    padding-right: 0;
-    text-align: center;
-
-  }
-
-  .store-map {
-    width: 100px;
-    height: 100px;
-    padding-top: 20px;
-    text-align: center;
+  .about-image {
+      left: 0;
   }
 }
 
