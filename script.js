@@ -31,3 +31,19 @@ image.forEach(function(card) {
     image.classList.toggle("content-box")
 }) 
 })
+
+window.addEventListener('scroll', () => {
+    let scrollToTop = document.querySelector('#scroll');
+    if(window.pageYOffset >= (document.documentElement.scrollHeight / 2)) {
+        scrollToTop.style.display = 'block';
+    } else {
+        scrollToTop.style.display = 'none'
+    }
+});
+
+document.querySelector('#scroll').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+})
