@@ -143,7 +143,7 @@ nav h1:hover {
     height: 90vh;
     float: left;
     position: relative;
-    background: rgba(0, 0, 0, 0);
+    background: transparent;
 }
 
 .slider {
