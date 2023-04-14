@@ -143,6 +143,7 @@ nav h1:hover {
     height: 90vh;
     float: left;
     position: relative;
+    background: rgba(0, 0, 0, 0);
 }
 
 .slider {
@@ -296,37 +297,38 @@ nav h1:hover {
 
 }
 
-.mainpageBtns {
+/* .mainpageBtns {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-}
+} */
 
 .text-heading button {
     margin: 0 20px;
     width: 150px;
     height: 40px;
-    background-color: #ff0000;
     color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 10px;
+    border: solid 3px white;
+    border-radius: 15px;
     cursor: pointer;
     text-transform: uppercase;
+    background: rgb(0, 0, 0);
 }
 
 .text-heading button:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-transform: uppercase;
+    border: solid 3px rgb(0, 0, 0);
+
 }
 
 
 #services {
     margin: 0;
     padding: 0;
-    background-color: rgb(193, 26, 26);
     height: auto;
 }
 
